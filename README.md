@@ -20,7 +20,7 @@
 
 제어판 -> 프로그램 -> Windows 기능 켜기/끄기 -> Linux용 Windows 하위 시스템 체크하고 재부팅하기
 
-![WSL](img/제목 없음.png)
+![wsl](https://github.com/alsrb3272/docker-airflow/blob/d3dd081f88fe93706bff3a12becac2f6d91fdca3/img/%EC%A0%9C%EB%AA%A9%20%EC%97%86%EC%9D%8C.png)
 
 
 
