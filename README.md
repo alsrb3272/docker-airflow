@@ -20,7 +20,7 @@
 
 제어판 -> 프로그램 -> Windows 기능 켜기/끄기 -> Linux용 Windows 하위 시스템 체크하고 재부팅하기
 
-![WSL설정](img/제목 없음.png)
+![WSL](img/제목 없음.png)
 
 
 
