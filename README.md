@@ -26,7 +26,7 @@
 
 검색창에 Microsoft Store로 이동 후 Linux를 검색하면 하단에 나온 이미지와 같은 앱을 설치
 
-![image-20221228120123276](C:\Users\mink\AppData\Roaming\Typora\typora-user-images\image-20221228120123276.png)
+![ubuntu](img/스크린샷_20221228_120110.png)
 
 다운로드가 완료되면 실행을 하여 콘솔 창에 username과 password를 자유롭게 설정하고 들어가면된다.
 
