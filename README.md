@@ -112,6 +112,54 @@ $ ./airflow.sh python
 $ docker ps
 ```
 
+## 최종점검
+
+### DAG란?
+
+DAG(Directed Acyclic Graph) 즉 비순환 그래프라고 하며 순환하는 사이클이 존재하지 않고, 일방향성만 가지고있다.
+
+![DAG](https://github.com/alsrb3272/docker-airflow/blob/38d7645c2ea45c6b9f11c2b654d65cca674ccdb1/img/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_20221228_040314.png)
+
+**※ 분기 조건이 바뀔 시 전체 애플리케이션을 수정하고 배포해야하는 불편함을 가짐**
+
+**그렇지만 Airflow에서는 실행할 순서에 따라 DAG에 배치하고 실행 주기와 분기 조건을 반영한다.**
+
+
+
+### Airflow란?
+
+ETL 자동화 파이프라인을 구성하는데 사용하며 WorkFlow를 정의하고 실행 가능한 플랫폼으로 반복된 작업을 자동화하기위해 사용된다.
+
+
+
+### Airflow 아키텍처
+
+![Airflow 아키텍처](https://github.com/alsrb3272/docker-airflow/blob/38d7645c2ea45c6b9f11c2b654d65cca674ccdb1/img/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_20221228_035945.png)
+
+**Scheduler** - Airflow의 DAG와 작업들을 모니터링하고 실행 순서와 상태 관리
+
+**Worker** - Airflow의 작업을 실행하는 공간
+
+**Metadata Database** - Airflow에서 실행할 작업에 관한 정보들을 저장
+
+**WebServer** - Airflow의 User Interface 제공
+
+**DAG Directory** - Airflow에서 실행할 작업들을 파이프라인 형태로 저장
+
+
+
+즉, Airflow는 Scheduler가 DAG Directory의 작업을 가져와서 Worker에서 실행하는 형태
+
+
+
+## Docker을 사용하는 경우 
+
+- docker-compse 실행 시 Airflow 이미지가 각각 Scheduler, Worker, Webserver, flower 컨테이너로 실행
+- 추가로 PostgreSQL과 redis 컨테이너도 필요
+- PostgreSQL은 Airflow의 설정 정보, DAG과 작업들의 메타 정보등을 저장
+- redis는 메시지 브로커로서 Scheduler에서 Worker로 메시지를 전달하는 역할을 수행
+
+
 
 
 [Airflow Documentation](https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html)
