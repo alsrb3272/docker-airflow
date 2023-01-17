@@ -169,4 +169,8 @@ ETL 자동화 파이프라인을 구성하는데 사용하며 WorkFlow를 정의
 [로컬 airflow사이트](http://localhost:8080)
 
 
+## Part4. Airflow 설치 후 MYSQL 서버 및 DAG를 통한 크롤링 자동화 생성
+
+2023-1-17완료
+작성 추후
 
