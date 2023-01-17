@@ -20,8 +20,8 @@ default_args = {
     # 현재는 23년 1월이므로 태그를 실행하면 무조건 한번은 돌아갈 것
 }
 
-NAVER_CLI_ID = "MU4487CE1mRkX3THqT42"
-NAVER_CLI_SECRET = "tUmVdjRQ3z"
+NAVER_CLI_ID = "***********"
+NAVER_CLI_SECRET = "*******"
 
 
 sql_create_table="""
