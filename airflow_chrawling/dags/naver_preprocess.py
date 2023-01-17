@@ -30,10 +30,10 @@ def abc(ti):
     ])
     
     # db info
-    user_name = 'mink'
-    pass_my = '1234'
-    host_my = '192.168.0.1:3306'
-    db_name = 'test'
+    user_name = ''
+    pass_my = ''
+    host_my = ''
+    db_name = ''
 
     # to_sql
     connection= sqlalchemy.create_engine(f"mysql+mysqlconnector://{user_name}:{pass_my}@{host_my}/{db_name}")
