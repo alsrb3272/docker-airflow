@@ -652,4 +652,4 @@ $ sudo apt-get install python3-dev default-libmysqlclient-dev build-essential
 
 [참고_2](https://stackoverflow.com/questions/61063676/command-errored-out-with-exit-status-1-python-setup-py-egg-info-check-the-logs)
 
-[참고_3](
+[참고_3](https://velog.io/@sandartchip/Command-errored-out-with-exit-status-1-python-setup.py-egginfo-Check-the-logs-for-full-command-output)
